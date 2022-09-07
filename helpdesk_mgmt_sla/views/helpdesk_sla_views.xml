@@ -14,17 +14,24 @@
                     <group>
                         <group>
                             <separator colspan="2" string="Apply on" />
+                            <field name="team_ids" widget="many2many_tags" />
+                            <field name="category_ids" widget="many2many_tags" />
+                            <field name="tag_ids" widget="many2many_tags" />
                             <field
-                                name="team_ids"
-                                domain="[('use_sla', '=', True)]"
-                                widget="many2many_tags"
+                                name="domain"
+                                widget="domain"
+                                options="{'model': 'helpdesk.sla', 'in_dialog': True}"
                             />
                             <separator colspan="2" string="Target" class="mt32" />
-                            <field name="stage_id" string="Reach Stage" />
+                            <field name="stage_ids" string="Reach Stages" />
                             <label for="days" string="Reach In" />
                             <div class="o_row">
-                                <field name="days" /> days<br />
-                                <field name="hours" /> hours<br />
+                                <field name="days" />
+                                days
+                                <br />
+                                <field name="hours" />
+                                hours
+                                <br />
                             </div>
                         </group>
                     </group>
@@ -39,7 +46,6 @@
         <field name="arch" type="xml">
             <tree string="SLA">
                 <field name="name" />
-                <field name="stage_id" />
                 <field name="days" />
                 <field name="hours" />
                 <field name="note" />
