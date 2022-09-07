@@ -1,0 +1,1 @@
+odoo14-addon-helpdesk_mgmt_sla @git+https://github.com/OCA/helpdesk_mgmt_sla@refs/pull/362/head#subdirectory=setup/helpdesk_mgmt_sla
