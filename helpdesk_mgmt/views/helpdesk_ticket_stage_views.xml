@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-    <record id="view_helpdesk_ticket_stage_search" model="ir.ui.view">
+    <record id="helpdesk_ticket_stage_view_search" model="ir.ui.view">
         <field name="name">helpdesk.ticket.stage.search</field>
         <field name="model">helpdesk.ticket.stage</field>
         <field name="arch" type="xml">
@@ -25,7 +25,7 @@
             </search>
         </field>
     </record>
-    <record id="view_helpdesk_ticket_stage_form" model="ir.ui.view">
+    <record id="helpdesk_ticket_stage_view_form" model="ir.ui.view">
         <field name="name">helpdesk.ticket.stage.form</field>
         <field name="model">helpdesk.ticket.stage</field>
         <field name="arch" type="xml">
@@ -37,7 +37,7 @@
                         name="web_ribbon"
                         title="Archived"
                         bg_color="bg-danger"
-                        attrs="{'invisible': [('active', '=', True)]}"
+                        invisible="active"
                     />
                     <div class="oe_button_box" name="button_box">
                     </div>
@@ -61,10 +61,7 @@
                         <group name="main_right">
                             <field name="active" invisible="1" />
                             <field name="closed" />
-                            <field
-                                name="close_from_portal"
-                                attrs="{'invisible': [('closed', '=', False)]}"
-                            />
+                            <field name="close_from_portal" invisible="not closed" />
                             <field name="unattended" />
                         </group>
                     </group>
@@ -73,7 +70,7 @@
             </form>
         </field>
     </record>
-    <record id="view_helpdesk_ticket_stage_tree" model="ir.ui.view">
+    <record id="helpdesk_ticket_stage_view_tree" model="ir.ui.view">
         <field name="name">helpdesk.ticket.stage.tree</field>
         <field name="model">helpdesk.ticket.stage</field>
         <field name="arch" type="xml">
