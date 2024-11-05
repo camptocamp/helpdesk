@@ -95,7 +95,7 @@ class TestHelpdeskTicketFSMOrder(TransactionCase):
         action_view_ticket = self.test_location.action_view_ticket()
         self.assertEqual(
             action_view_ticket["views"],
-            [(self.env.ref("helpdesk_mgmt.ticket_view_form").id, "form")],
+            [(self.env.ref("helpdesk_mgmt.helpdesk_ticket_view_form").id, "form")],
         )
         self.assertEqual(action_view_ticket["res_id"], self.ticket_1.id)
         # checking action_complete on fsm.order with ticket
