@@ -1,0 +1,8 @@
+- [Open Source Integrators](https://www.opensourceintegrators.com):
+  - Maxime Chambreuil \<<mchambreuil@opensourceintegrators.com>\>
+- [Konos](https://www.konos.cl):
+  - Nelson Sanchez \<<nramirez@konos.cl>\>
+- [Solvos](https://www.solvos.es):
+  - David Alonso \<<david.alonso@solvos.es>\>
+- [Camptocamp](https://www.camptocamp.com):
+  - Italo Lopes \<<italo.lopes@camptocamp.com>\>
