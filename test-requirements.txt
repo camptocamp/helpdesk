@@ -1,0 +1,2 @@
+odoo-addon-helpdesk_mgmt_fieldservice_equipment @ git+https://github.com/OCA/helpdesk.git@refs/pull/818/head#subdirectory=helpdesk_mgmt_fieldservice_equipment
+odoo-addon-fieldservice_equipment_warranty @ git+https://github.com/OCA/field-service.git@refs/pull/1434/head#subdirectory=fieldservice_equipment_warranty
